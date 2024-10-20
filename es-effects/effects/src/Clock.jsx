@@ -7,6 +7,7 @@ export function Clock() {
   }
   useEffect(() => {
     setInterval(updateTimer, 1000);
+    return () => clearInterval(interval);
   }, []);
 
   return <h2>{time}</h2>;
