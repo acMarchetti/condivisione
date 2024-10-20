@@ -3,6 +3,7 @@ export function MouseClicker() {
     console.log(event.target.name);
   }
   function imgHandler(event) {
+    event.stopPropagation();
     console.log(event.target.src);
   }
   return (
