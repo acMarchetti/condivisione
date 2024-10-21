@@ -25,6 +25,9 @@ export function Login() {
       session: false,
     });
   }
+  function onLogin() {
+    console.log(data);
+  }
   return (
     <>
       <input name="username" value={data.username} onChange={handleInput2} />
@@ -46,7 +49,9 @@ export function Login() {
           />
         </label>
       </form>
-      <button disabled={!data.username || !data.password}>login</button>
+      <button disabled={!data.username || !data.password} onClick={onLogin}>
+        login
+      </button>
       <button onClick={reset}>reset</button>
     </>
   );
