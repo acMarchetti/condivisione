@@ -1,0 +1,7 @@
+.welcome {
+  background-color: lightblue; /* Sets the background color */
+  border: 2px solid navy; /* Adds a border */
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
