@@ -1,5 +1,11 @@
+import { FocusableInput } from "./FocusableInput";
 import UncontrolledLogin from "./UncrolledLogin";
 
 export function App() {
-  return UncontrolledLogin;
+  return (
+    <StrictMode>
+      <UncontrolledLogin />
+      <FocusableInput />
+    </StrictMode>
+  );
 }
