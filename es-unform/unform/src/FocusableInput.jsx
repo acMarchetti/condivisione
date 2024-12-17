@@ -1,6 +1,4 @@
 import React, { useEffect, useRef } from "react";
-import ReactDOM from "react-dom/client";
-import { StrictMode } from "react";
 
 // FocusableInput Component
 export function FocusableInput() {
